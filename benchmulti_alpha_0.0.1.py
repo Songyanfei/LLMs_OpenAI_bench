@@ -83,6 +83,7 @@ average_decoded_words = results["total_decoded_words"] / results["count"]
 average_encoding_speed = results["total_encoded_words"] / results["total_time_accumulated"]
 average_decoding_speed = results["total_decoded_words"] / results["decode_time_accumulated"]
 
+# 让我看起来开心一点
 total_encoding_speed = average_encoding_speed * num_requests
 total_decoding_speed = average_decoding_speed * num_requests
 
