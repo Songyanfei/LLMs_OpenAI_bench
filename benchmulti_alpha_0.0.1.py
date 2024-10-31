@@ -32,6 +32,7 @@ def send_request():
             {"role": "system", "content": "你是个很有帮助的chat助手, 请你回答我的问题."},
             {"role": "user", "content": content}
         ],
+        max_tokens=4096,
         stream=True
     )
 
