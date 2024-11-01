@@ -1,7 +1,7 @@
 # LLMs_OpenAI_bench
 
 ## Overview
-`Naive_OpenAI_bench` is a simple benchmarking script designed to evaluate model throughput and identify system bottlenecks in business scenarios. It utilizes a multi-threaded approach to send concurrent requests to large model services, providing insights into performance under different load conditions.
+`LLMs_OpenAI_bench` is a simple benchmarking script designed to evaluate model throughput and identify system bottlenecks in business scenarios. It utilizes a multi-threaded approach to send concurrent requests to large model services, providing insights into performance under different load conditions.
 
 ## Features
 - **Multi-threaded Requests**: Supports executing multiple requests simultaneously to simulate high-load scenarios.
