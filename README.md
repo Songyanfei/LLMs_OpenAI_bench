@@ -16,12 +16,12 @@ Clone this repository or download the script directly into your preferred direct
 ```bash
 git clone https://github.com/yourrepository/Naive_OpenAI_bench.git
 cd LLMs_OpenAI_bench
-
+```
 ## Usage
 Run the script using Python with necessary arguments:
 ```bash
 python bench.py --model /data/webapps/llms/Qwen2.5-72B-Instruct-AWQ -c "请给我讲个1000字的故事" -b 2 4 8 16
-
+```
 ### Arguments
 - `--model` (required): Path to the model you want to test.
 - `--url` (optional): Server address, defaults to '192.168.3.54'.
@@ -35,11 +35,11 @@ python bench.py --model /data/webapps/llms/Qwen2.5-72B-Instruct-AWQ -c "请给�
 Run benchmark with default settings:
 ```bash
 python bench.py --model /data/webapps/llms/Qwen2.5-72B-Instruct-AWQ
-
+```
 Run benchmark with custom server address and multiple batch sizes:
 ```bash
 python bench.py --model /data/webapps/llms/Qwen2.5-72B-Instruct-AWQ --url 192.168.3.100 --port 18200 --api_key "your_api_key" -c "Test the large model server" -b 1 5 10
-
+```
 ## Contributing
 Contributions to `Naive_OpenAI_bench` are welcome! Please fork the repository and submit a pull request with your enhancements.
 
