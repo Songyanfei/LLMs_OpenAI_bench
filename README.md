@@ -19,17 +19,28 @@ cd LLMs_OpenAI_bench
 ```
 ## Usage
 Run the script using Python with necessary arguments:
+
+```bash
+python bench.py --model /disk-56/syf/Qwen2.5-14B-Instruct-AWQ -b 2 --url 192.168.3.123 --p 8899 -i 1024 -o 1024
+```
+
 ```bash
 python bench.py --model /data/webapps/llms/Qwen2.5-72B-Instruct-AWQ -c "请给我讲个1000字的故事" -b 2 4 8 16
 ```
+
+
+
 ### Arguments
-- `--model` (required): Path to the model you want to test.
-- `--url` (optional): Server address, defaults to '192.168.3.54'.
-- `--port` `-p` (optional): Server port, defaults to '19125'.
-- `--api_key` (optional): API key for authentication.
-- `--content` `-c` (optional): Content to send as request payload, defaults to 'r u ok?'.
-- `--batch` `-b` (optional): Batch sizes to test, accepts multiple values for concurrent requests.
-- `--detail` (optional): Set to True to print detailed information about each request and response.
+- `--json_file` (optional): Path to JSON file, defaults to 'data/zh.json'
+- `--model` (required): Path to the model to test
+- `--url` (optional): Server address, defaults to '192.168.3.54'
+- `--port` `-p` (optional): Server port, defaults to '19125'
+- `--api_key` (optional): API key for authentication, defaults to 'token-abc123'
+- `--content` `-c` (optional): Test content
+- `--input_len` `-i` (optional): Input length
+- `--output_len` `-o` (optional): Output length
+- `--batch` `-b` (optional): Number of concurrent requests, accepts multiple values, defaults to [1]
+- `--detail` (optional): Print detailed request and response information, defaults to False
 
 ## Examples
 Run benchmark with default settings:
