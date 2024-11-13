@@ -9,12 +9,12 @@
 - **Detailed Metrics**: Option to print detailed request and response metrics for in-depth analysis.
 
 ## Prerequisites
-Ensure you have Python installed on your system to run the script. This script is tested with Python 3.7 and above.
+Ensure you have Python installed on your system to run the script. This script is tested with Python 3.10 and above.
 
 ## Installation
 Clone this repository or download the script directly into your preferred directory:
 ```bash
-git clone https://github.com/yourrepository/Naive_OpenAI_bench.git
+git https://github.com/Songyanfei/LLMs_OpenAI_bench.git
 cd LLMs_OpenAI_bench
 ```
 ## Usage
@@ -52,7 +52,7 @@ Run benchmark with custom server address and multiple batch sizes:
 python bench.py --model /data/webapps/llms/Qwen2.5-72B-Instruct-AWQ --url 192.168.3.100 --port 18200 --api_key "your_api_key" -c "Test the large model server" -b 1 5 10
 ```
 ## Contributing
-Contributions to `Naive_OpenAI_bench` are welcome! Please fork the repository and submit a pull request with your enhancements.
+Contributions to `LLMs_OpenAI_bench` are welcome! Please fork the repository and submit a pull request with your enhancements.
 
 ## License
 Specify the license under which your tool is released.
